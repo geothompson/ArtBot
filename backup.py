@@ -76,7 +76,6 @@ generate three promts without articles like "a" or "the" from the idea:
 """
 
 
-openai.api_key = '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'
 
 def get_api_response(input: str) -> str | None:
 

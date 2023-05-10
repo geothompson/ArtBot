@@ -67,7 +67,7 @@ def get_image_prompt(input: str) -> str | None:
 def get_image_url(input: str) -> str | None:
     response = openai.Image.create(
             prompt = input,
-            n = 1,
+            n = 2,
             size = "512x512"
             )
     return (response['data'][0]['url'])
