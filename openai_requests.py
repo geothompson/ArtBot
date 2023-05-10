@@ -43,10 +43,11 @@ users idea:
 
 '''
 
-generate a unique, creative, detailed, condensed sentence incorporating 
-the users prompt. Each phrae should seperated by commas and not contain articles
-like 'a' or 'the'they should  are a similar in structures to the example Answers 
-after A: above. boil each sub-phrase in the sentence down to it's main idea. 
+generate a creative prompt under 50 words composed of keywords and phrases related to imagery 
+focused around the users prompt. Don't be too verbose. 
+Each phrae should seperated by commas and 
+they should  are a similar in structures to the example Answers 
+after A: above. 
 
 """
 
@@ -73,7 +74,7 @@ def get_image_url(input: str) -> str | None:
     return (response['data'][0]['url'])
 
 if __name__ == "__main__":
-    i = input(">>")
+    i = input(">> ")
     image_prompt = get_image_prompt(i)
     if(image_prompt == None):
         print("Failed gpt-3.5 api call")
