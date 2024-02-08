@@ -9,6 +9,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 if TOKEN == None:
     print("invalid discord API token")
     sys.exit("1")
+
 intents = discord.Intents.default()
 intents.message_content = True
 
