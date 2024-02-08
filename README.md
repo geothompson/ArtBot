@@ -1,2 +1,2 @@
 Author: George Thompson, thom7918@umn.edu
-Project to create an AI art bot as a way to study API's and utilizing LLM's
+A Discord bot utilizing OpenAI's apis to take a users idea for an image prompt, modifiy it, and use DALE to generate an image which gets displayed in the message thread.
